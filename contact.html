@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="styles.css"  rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.png"/>
+        <ul>
+            <li class="nav-item"><a href="index.html">Accueil</a></li>
+            <li class="nav-item"><a href="formation.html">Formation</a></li>
+            <li class="nav-item"><a href="temoignages.html">Témoignagnes</a></li>
+            <li class="nav-item"><a href="reference.html">Nos références</a></li>
+            <li class="nav-item"><a href="contact.html">Contactez-nous</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contactez-nous</h1>
+    <form>
+        <form>
+            <div>
+                <label for="name">Prénom Nom:</label><br>
+                <input type="text" id="name" name="name" required><br>
+            </div>
+            <div>
+                <label for="email">Adresse mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Téléphone:</label><br>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div>
+                <p>Vous êtes</p>
+                <input type="radio" id="statut-demandeur" name="statut" value="demandeur-emploi">
+                <label for="statut-demandeur">Demandeur d'emploi</label><br>
+                <input type="radio" id="transition" name="statut" value="transition-pro">
+                <label for="transition">Salarié en transition pro</label><br>
+                <input type="radio" id="autre" name="statut" value="autre">
+                <label for="autre">Autre</label>
+            </div>
+            <div>
+                <p>Vos modalités préférées</p>
+                <input type="radio" id="presentiel" name="modalites-selection" value="presentiel">
+                <label for="presentiel">Formation en présentiel</label><br>
+                <input type="radio" id="distance" name="modalites-selection" value="distance">
+                <label for="distance">100% distanciel</label><br>
+                <input type="radio" id="alternance" name="modalites-selection" value="alternance">
+                <label for="alternance">Alternance</label>
+                <input type="radio" id="aucun-choix" name="modalites-selection" value="aucun-choix">
+                <label for="aucun-choix">Pas de préférence</label>
+            </div>
+            <div>
+                <label for="region-select">Vous êtes résident de:</label>
+                <select name="region-select" id="region-select">
+                    <option value="">Choisissez votre région</option>
+                    <option value="auvergne-rhone-alpes">Auvergne-Rhône-Alpes</option>
+                    <option value="bourgogne-franche-co">Bourgogne-Franche-Co</option>
+                    <option value="Bretagne">Bretagne</option>
+                </select>
+            </div>
+          </form>
+    </form>
+
+    <a href="" id="contact-btn">Envoyer</a>
+    
+</body>
+</html>
